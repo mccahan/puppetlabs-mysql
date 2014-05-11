@@ -53,8 +53,8 @@ class mysql::params {
         $config_file         = '/etc/my.cnf'
         $pidfile             = '/var/run/mariadb/mariadb.pid'
       } else {
-        $client_package_name = 'mysql'
-        $server_package_name = 'mysql-server'
+        $client_package_name = 'mysql55w'
+        $server_package_name = 'mysql55w-server'
         $server_service_name = 'mysqld'
         $log_error           = '/var/log/mysqld.log'
         $config_file         = '/etc/my.cnf'
@@ -72,7 +72,7 @@ class mysql::params {
       # mysql::bindings
       $java_package_name   = 'mysql-connector-java'
       $perl_package_name   = 'perl-DBD-MySQL'
-      $php_package_name    = 'php-mysql'
+      $php_package_name    = 'php55w-mysql'
       $python_package_name = 'MySQL-python'
       $ruby_package_name   = 'ruby-mysql'
     }
